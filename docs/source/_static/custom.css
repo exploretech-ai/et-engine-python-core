@@ -1,0 +1,41 @@
+/* --- Better Layout for autosummary Tables --- */
+.autosummary td, .autosummary th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.autosummary th {
+    background-color: #005b99; /* Dark blue for headers */
+    color: white;
+    font-weight: bold;
+}
+
+.autosummary td {
+    background-color: #f9fafb;  /* Soft background for better readability */
+}
+
+.autosummary td a {
+    color: #007acc;  /* Blue links for visibility */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.autosummary td a:hover {
+    color: #004c99;  /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* --- Improve Code Block Styling for Accessibility --- */
+.highlight pre {
+    background-color: #f4f6f8;  /* Soft grey background for code blocks */
+    color: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* --- Make sure there's enough spacing between elements --- */
+.autosummary, .highlight {
+    margin-bottom: 20px; /* Add space between tables and code blocks */
+}
