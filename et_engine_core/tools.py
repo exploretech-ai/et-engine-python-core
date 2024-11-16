@@ -79,6 +79,11 @@ class Tool:
         self.tool_description = tool_description
 
 
+    def __repr__(self):
+        message = f"ET Engine Tool [{self.tool_id}]: {self.tool_name} | {self.tool_description}"
+        return message
+
+
     def __eq__(self, obj: object) -> bool:
         """Checks if the object is equal to the Tool
 
