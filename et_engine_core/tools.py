@@ -79,7 +79,7 @@ class Tool:
         self.tool_description = tool_description
 
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         message = f"ET Engine Tool [{self.tool_id}]: {self.tool_name} | {self.tool_description}"
         return message
 
