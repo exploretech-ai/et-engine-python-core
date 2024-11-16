@@ -32,6 +32,11 @@ class Filesystem:
             return is_equal
         except:
             return False
+        
+
+    def __repr__(self) -> None:
+        message = f"ET Engine Filesystem [{self.filesystem_id}]: {self.filesystem_name}"
+        return message
 
 
     def to_json(self) -> dict[str: str]:
