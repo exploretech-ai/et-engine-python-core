@@ -131,6 +131,17 @@ class BatchStatus:
             return False
         
 
+    def __repr__(self) -> str:
+        message  = f"submitted: {self.submitted}\n"
+        message += f"pending:   {self.pending}\n"
+        message += f"runnable:  {self.runnable}\n"
+        message += f"starting:  {self.starting}\n"
+        message += f"running:   {self.running}\n"
+        message += f"succeeded: {self.succeeded}\n"
+        message += f"failed:    {self.failed}\n"
+        return message
+        
+
     def to_json(self) -> dict[str: str]:
         """Export Batch Status to JSON-like dictionary
 
